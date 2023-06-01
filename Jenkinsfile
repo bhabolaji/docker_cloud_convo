@@ -2,8 +2,8 @@ pipeline {
   agent any
 
   environment {
-       imagename = "tkibnyusuf/customizetomcatimage"
-       registryCredential = 'DockerHub'
+       imagename = "bhabolaji/customizetomcatimage"
+       registryCredential = 'Dockerhub'
        dockerImage = ''
            }
 
@@ -31,7 +31,7 @@ pipeline {
                       }
                 }
 
-     stage('Push Docker Image to DockerHub') {
+     stage('Push Docker Image to Dockerhub') {
            steps{
                script {
                     docker.withRegistry( '', registryCredential ) {
