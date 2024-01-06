@@ -2,7 +2,7 @@ pipeline {
   agent any
 
   environment {
-       imagename = "bhabolaji/customizetomcatimage"
+       imagename = "bhabolaji/my_jenkinscustomize_image"
        registryCredential = 'Dockerhub'
        dockerImage = ''
            }
